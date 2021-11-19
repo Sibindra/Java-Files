@@ -4,6 +4,7 @@ class Student {
     int roll;
     static String collegeName="NCIT";
 
+    // setters 
     public void setName(String name){
         this.name=name;
     }
@@ -12,6 +13,7 @@ class Student {
         this.roll=roll;
     }
 
+    // getters
     public String getName(){
         return this.name;
     }
