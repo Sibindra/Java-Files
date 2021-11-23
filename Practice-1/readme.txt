@@ -1,0 +1,1 @@
+Job is a user-defined data type and the objecive is to use job as a datatype on another class
