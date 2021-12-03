@@ -1,0 +1,3 @@
+copied using buffer
+
+buffer makes it faster for larger size of data such as mp3 ..etc
