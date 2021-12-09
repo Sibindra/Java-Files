@@ -24,7 +24,7 @@ class Test{
         // else catch the exception with catch
         catch(Exception e){
             // here e shows the reason for the exception in this case : Arithmetic Exception
-            System.out.println("Failed to run as: "+e);
+            System.out.println("Exception occoured as: "+e);
             return 0;
         }
     }
