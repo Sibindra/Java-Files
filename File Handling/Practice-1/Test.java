@@ -1,33 +1,36 @@
 // WAP to get a name, rollno and faculty from the user and write it to a file named Student
 import java.io.*;
-import java.util.*;
+import java.util.Scanner;
 
 class Test{
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException {
         Scanner s=new Scanner(System.in);
 
-        FileOutputStream fos=new FileOutputStream("Records.dat");
+        String prompt;
+
+        FileOutputStream fos=new FileOutputStream("record.txt");
         DataOutputStream dos=new DataOutputStream(fos);
 
         do{
-            System.out.println("Enter name: ");
+            System.out.println("Enter the name: ");
             String name=s.next();
 
-            System.out.println("Enter roll no: ");
+            System.out.println("Enter the roll no: ");        
             int roll=s.nextInt();
 
-            System.out.println("Enter Faculty: ");
+            System.out.println(("Enter the faculty: "));
             String faculty=s.next();
 
             dos.writeUTF(name);
             dos.writeInt(roll);
             dos.writeUTF(faculty);
 
-            System.out.println("Press any key to continue! (yes/no)");
-            String prompt=s.next();
+            System.out.println("Enter no to exit and anyother key to continue!");
+            prompt=s.next();
 
-        }while(!prompt.toLowercase().equals("no"));
-    
+        } while(prompt.toLowerCase().equals("no"));
+
+        // closing 
         fos.close();
         dos.close();
         s.close();
