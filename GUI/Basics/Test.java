@@ -10,7 +10,7 @@ class GUI{
         t1.setBounds(100,100,200,20);
 
         JButton b=new JButton("click me");
-        b.setBounds(150,200,50,20);
+        b.setBounds(120,200,150,20);
 
         f.setVisible(true);
         f.setLayout(null);
