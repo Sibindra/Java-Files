@@ -28,7 +28,7 @@ class Test{
             System.out.println("Enter no to exit and anyother key to continue!");
             prompt=s.next();
 
-        } while(prompt.toLowerCase().equals("no"));
+        } while(!prompt.toLowerCase().equals("no"));
 
         // closing 
         fos.close();
